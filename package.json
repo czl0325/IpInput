@@ -2,7 +2,7 @@
   "name": "ip-input-vue3",
   "author": "czl0325",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/IpInput.es.js",
   "module": "dist/IpInput.es.js",
