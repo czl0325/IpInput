@@ -14,7 +14,7 @@
       <i class="symbol_box" v-if="index < state.ipControlArr.length - 1">·</i>
     </div>
     <div class="ip_input_box" v-if="port !== undefined">
-      <i>:</i>
+      <i style="font-style: normal">:</i>
       <input
           class="port_input"
           :value="portRef"
@@ -53,7 +53,7 @@ const portRef = toRef(props, "port")
 const inputRefs: HTMLInputElement[] = []
 const state = reactive({
   ipControlArr: new Array(4),
-  ipArrs: new Array(4) as (number | undefined)[]
+  ipArr: new Array(4) as (number | undefined)[]
 })
 const setInputRef = (el: any) => {
   if (!el || inputRefs.findIndex((inputRef) => inputRef.name === el.name) > -1)

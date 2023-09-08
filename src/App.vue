@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IpInput from "./components/IpInput.vue";
+import IpInput from "./components/IpInput.vue"
 import { reactive } from "vue"
 const ipAddr = reactive({
   ip: "127.0.0.1",
