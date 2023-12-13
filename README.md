@@ -27,4 +27,11 @@ const ipAddr = reactive({
 <ip-input v-model:ip="ipAddr.ip" v-model:port="ipAddr.port"/>
 ```
 
+### 参数
+
+| 参数 | 名称 | 是否必填 | 默认值 |
+| :--: | :--: | :--: | :--: |
+| v-model:ip | ip地址 | 是 |  |
+| v-model:port | 端口号 | 否 |  |
+| disabled | 是否禁用 | 否 | false |
 
