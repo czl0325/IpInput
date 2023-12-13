@@ -1,8 +1,9 @@
 {
   "name": "ip-input-vue3",
   "author": "czl0325",
+  "homepage": "https://github.com/czl0325/IpInput",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "dist/IpInput.es.js",
   "module": "dist/IpInput.es.js",

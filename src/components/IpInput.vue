@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, toRef, watch } from "vue"
+import { reactive, toRef, watch, watchEffect } from "vue"
 defineOptions({
   name: "IpInput"
 })
@@ -84,7 +84,7 @@ const handleInput = (index: number, el: any) => {
     // 设置新的值
     state.ipControlArr[index] = targetValue
   }
-  const ip = state.ipControlArr.join(".")
+  const ip = state.ipControlArr.every(item => item === "") ? "" : state.ipControlArr.join(".")
   // 返回新的值
   emit("update:ip", ip)
   // 调用返回值
